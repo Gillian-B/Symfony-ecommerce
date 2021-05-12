@@ -16,35 +16,35 @@ class Product
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"cart:read"})
+     * @Groups({"cart:read", "order:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank
-     * @Groups({"cart:read"})
+     * @Groups({"cart:read", "order:read"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank
-     * @Groups({"cart:read"})
+     * @Groups({"cart:read", "order:read"})
      */
     private $description;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank
-     * @Groups({"cart:read"})
+     * @Groups({"cart:read", "order:read"})
      */
     private $photo;
 
     /**
      * @ORM\Column(type="decimal", precision=10, scale=2)
      * @Assert\NotBlank
-     * @Groups({"cart:read"})
+     * @Groups({"cart:read", "order:read"})
      */
     private $price;
 
