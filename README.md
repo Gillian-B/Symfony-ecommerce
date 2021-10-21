@@ -1,4 +1,4 @@
-# T-WEB-600-LYN-6-1-ecommerce-raphael.olivon
+# Symfony-ecommerce
 file .env --> set db_user / db_password
 ``` bash
 composer install
